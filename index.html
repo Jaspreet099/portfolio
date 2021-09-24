@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-wrapper">
+            <p>Portfolio</p>
+        </div>
+        <div class="header-option-wrapper">
+            <ul class="header-option-list">
+                <li class="header-option">Home</li>
+                <li class="header-option">About Me</li>
+                <li class="header-option">Projects</li>
+                <li class="header-option">Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="name">
+        <p class="animate__animated animate__flipInX">Hi! I'm</p>
+        <p class="animate__animated animate__flipInX">Jaspreet</p>
+    </div>
+    <div class="name-text-area">
+        <p class="text-1">Welcome to my online space.</p>
+        <p class="text-2">Your friendly <span class="type"></span></p>
+    </div>
+
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: [
+                'Graphic Designer.',
+                'Front-end developer.'],
+             typeSpeed: 100,
+             backSpeed: 100,
+             startDelay: 400,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
