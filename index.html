@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" id="myHeader">
         <div class="logo-wrapper">
             <p>Portfolio</p>
         </div>
         <div class="header-option-wrapper">
             <ul class="header-option-list">
-                <li class="header-option">Home</li>
-                <li class="header-option">About Me</li>
-                <li class="header-option">Projects</li>
-                <li class="header-option">Contact</li>
+                <li class="header-option"><a href="#">Home</a></li>
+                <li class="header-option"><a href="#aboutme">About Me</a></li>
+                <li class="header-option"><a href="#skills">Skills</a></li>
+                <li class="header-option"><a href="#">Designs</a></li>
             </ul>
         </div>
     </div>
@@ -34,6 +35,37 @@
         <p class="text-2">Your friendly <span class="type"></span></p>
     </div>
 
+    <div class="about-me" id="aboutme">
+        <p class="heading">About Me</p>
+            <div class="about-me-wrapper">
+                <p class="intro">Hey folks, this is Jaspreet Singh Saini, a Second-year student pursuing BCA+MCA from Medi-Caps University. I'm a Graphic Designer and Front-end Web Developer who like to create amazing designs.
+                 <br> I have started this journey as a beginner & what I learned throughout is that what makes everything possible is consistency.
+                Willingness to learn something new is the foremost aspect of this skill :)
+            </p>    
+            <img src="./images/aboutme.png" alt="profile-pic" width="350px" height="350px">    
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <p class="heading">My Skill Set</p>
+        <div class="icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" />
+        </div>
+    </div>
+
+
     <script src="typed.js"></script>
     <script>
         var typed = new Typed('.type', {
@@ -42,10 +74,12 @@
                 'Front-end developer.'],
              typeSpeed: 100,
              backSpeed: 100,
-             startDelay: 400,
+             startDelay: 600,
             loop: true
         });
     </script>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
