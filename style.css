@@ -33,6 +33,13 @@ body{
 .header-option-wrapper > .header-option-list > li > a{
     text-decoration: none;
     color: black;
+    /* text-decoration: wavy; */
+    /* transition: all .5s ease-in; */
+}
+.header-option-wrapper > .header-option-list > li > a:hover{
+    text-decoration:underline;
+    color: black;
+    
 }
 
 .name{
