@@ -4,7 +4,11 @@ body{
     background-color: #F8F8FB;
     /* background-color: rgb(254,255,254); */
     /* margin: 0; */
+
 }
+.name {
+    --animate-duration: 1.5s;
+  }
 
 .header{
     padding: 1em;
@@ -13,6 +17,7 @@ body{
     justify-content: space-between;
     /* background-color: white; */
     /* position: -webkit-sticky; */
+    
 }
 
 .logo-wrapper{
@@ -88,6 +93,7 @@ body{
     display: flex;
     width: fit-content;
     line-height: 2.2em;
+    
 }
 
 .icons{
