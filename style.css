@@ -77,6 +77,8 @@ body{
 
 .about-me, .skills{
     padding: 4em;
+        transition-duration: 5s;
+      
 }
 
 
@@ -112,3 +114,6 @@ body{
     border: none;
     transition: 0.2s ease-in-out;
 }
+.header-option-wrapperdiv {
+    scroll-behavior: auto;
+  }
