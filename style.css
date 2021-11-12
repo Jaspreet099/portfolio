@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
-
+*{
+    !important
+}
 body{
     background-color: #F8F8FB;
     /* background-color: rgb(254,255,254); */
@@ -10,17 +12,18 @@ body{
     --animate-duration: 1.5s;
   }
 
-.header{
+#myHeader{
     padding: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     /* background-color: white; */
     /* position: -webkit-sticky; */
     
 }
 
-.logo-wrapper{
+#logo-wrapper{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 26px;
@@ -75,10 +78,8 @@ body{
     font-weight: 500;
 }
 
-.about-me, .skills{
-    padding: 4em;
-        transition-duration: 5s;
-      
+.about-me, .skills, .designs{
+    padding: 6em 4em;
 }
 
 
@@ -100,20 +101,90 @@ body{
 
 .icons{
     padding-left: 1em;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    display: flex;
+    justify-content: center;
 }
 .icons > img{
     width: 5em;
     padding: 1.5em;
-    
+    margin: 2rem;
 }
-.icons > img:hover{
+/* .icons > img:hover{
     box-shadow: 0 0px 22px 0px rgba(29, 28, 28, 0.151);
     border-radius: 12px;
     border: none;
     transition: 0.2s ease-in-out;
+} */
+
+.design-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
-.header-option-wrapperdiv {
-    scroll-behavior: auto;
+  .swiper {
+    width: 75%;
+    
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #scrollToTopButton {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    font-size: 25px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-color: #8c52ff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 8px 6px;
+    cursor: pointer !important;
+    border-radius: 50%;
+  }
+  
+  #scrollToTopButton i {
+    cursor: pointer !important;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .scrollToTopBtn {
+    /* also add a translate effect */
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    /* and a transition */
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .showBtn {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }

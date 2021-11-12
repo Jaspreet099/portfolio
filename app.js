@@ -1,17 +1,34 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+AOS.init();
 
-// Get the header
-var header = document.getElementById("myHeader");
+$(document).ready(function () {
+  //Scroll to top start ??
 
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
+var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var rootElement = document.documentElement
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+function handleScroll() {
+    // Do something on scroll - 0.15 is the percentage the page has to scroll before the button appears
+    // This can be changed - experiment
+    var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+    if ((rootElement.scrollTop / scrollTotal) > 0.15) {
+        // Show button
+        scrollToTopBtn.classList.add("showBtn")
+    } else {
+        // Hide button
+        scrollToTopBtn.classList.remove("showBtn")
+    }
 }
+
+function scrollToTop() {
+    // Scroll to top logic
+    rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+document.addEventListener("scroll", handleScroll)
+//  scroll to top end
+
+
+});
