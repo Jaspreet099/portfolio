@@ -1,23 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
-*{
-    !important
-}
+
 body{
     background-color: #F8F8FB;
+    /* padding-top: 12em; */
     /* background-color: rgb(254,255,254); */
     /* margin: 0; */
 
 }
 .name {
-    --animate-duration: 1.5s;
+    --animate-duration: 2s;
+    /* margin-top: 10em; */
   }
 
+  html{
+      scroll-behavior: smooth;
+  }
 #myHeader{
     padding: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; */
     /* background-color: white; */
     /* position: -webkit-sticky; */
     
@@ -37,6 +45,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 20px;
+    padding-right: 2em;
 }
 .header-option-wrapper > .header-option-list > li > a{
     text-decoration: none;
@@ -85,8 +94,8 @@ body{
 
 .heading{   
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 26px;
+    font-weight: 600;
+    font-size: 32px;
 }
 
 .about-me-wrapper{
@@ -96,7 +105,12 @@ body{
     display: flex;
     width: fit-content;
     line-height: 2.2em;
+    /* width: 80%; */
+    justify-content: center;
+    margin-left: 5%;
+    /* margin-right: 5%; */
     
+    padding-right: 2.5em;
 }
 
 .icons{
@@ -170,9 +184,10 @@ body{
   }
   
   #scrollToTopButton i {
+      color: white;
     cursor: pointer !important;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    /* -webkit-transform: rotate(-45deg); */
+            /* transform: rotate(-45deg); */
   }
   
   .scrollToTopBtn {
