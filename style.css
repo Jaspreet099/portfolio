@@ -9,6 +9,7 @@ body{
 }
 .name {
     --animate-duration: 2s;
+    
     /* margin-top: 10em; */
   }
 
